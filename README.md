@@ -1,25 +1,30 @@
-# Courier-Management-System
-<h3>About project:<p>The project is about a courier management system. Any user can use it to dispatch any parcel to the required destination and can easily track it until the delivery to the end user</p></h3>
+# Courier Management .NET Core MVC Project
 
-## Project Description: 
+## Project Overview
 
-<h3>Customer Panel</h3>
-- Dashboard: The first section where the users will land on.
-<br>
-<div align="center">
-<img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/b07f3b9a-6fde-422a-8bf7-fa9b2de85e56">
-<p>Dashboard</p>
-</div>
-<br>
-- Customer order placement: Customer can request for a pickup from his own residance and can dispatch the product easily. Meanwhile the customer will be registered and no need to be registered if the customer just want to roam around. A consignment number will be genereted to track the product.
-<br>
-<div align="center">
-<img  src="https://drive.google.com/file/d/1AUfgFd44Z2GQ83S_9JKevhITHIj7WrGO/view?usp=share_link">
-<p>Dashboard</p>
-</div>
-<br>
+The Courier Management .NET Core MVC Project is a web-based application designed to streamline and manage courier services. It provides an efficient solution for sending courier packages without the need to log in, and for admins to manage courier-related tasks, including creating, updating, and deleting packages.
 
-<h3>Admin Panel</h3>
-- Customer handling: Admins can change all the credentials of the customers 
-- Product handling: Admins can change the product delivery state
-- Officials handling: Admins can change the admins and officials information and roles.
+## Purpose
+
+The primary purpose of this project is to offer a user-friendly courier management solution, including:
+
+- **Admin Panel:** An admin panel for managing courier-related tasks, including creating, updating, and deleting courier packages.
+- **Send Courier:** Allow users to send courier packages without requiring them to log in.
+- **Responsive Design:** A user-friendly, responsive interface accessible from various devices.
+
+## Getting Started
+
+To run the Courier Management .NET Core MVC project, follow these steps:
+
+### Prerequisites
+
+- [.NET Core SDK](https://dotnet.microsoft.com/download)
+- Visual Studio, Visual Studio Code, or any code editor of your choice
+- SQL Server or another compatible database system
+
+### Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/harshgajera028/courier-management-dotnet.git
