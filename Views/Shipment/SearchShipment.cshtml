@@ -1,0 +1,50 @@
+﻿@model List<Courier_Management_System.Models.Domain.Shipment>
+
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Shipment and Customer Adding Panel</h1>
+    <small style="opacity:0.6">Courier Management System </small>
+    <hr />
+</div>
+
+<h1>Searhed Shipment by Consignment Id</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Consignment ID</th>
+            <th>Shipper Name</th>
+            <th>Shipper Address</th>
+            <th>Shipper Email</th>
+            <th>Receiver Name</th>
+            <th>Receiver Address</th>
+            <th>Receiver Email</th>
+            <th>Shipment Status</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var shipmentItem in Model)
+        {
+            <tr>
+                <td>@shipmentItem.Id</td>
+                <td>@shipmentItem.ShipperName</td>
+                <td>@shipmentItem.ShipperAddress</td>
+                <td>@shipmentItem.ShipperEmail</td>
+                <td>@shipmentItem.ReceiverName</td>
+                <td>@shipmentItem.ReceiverAddress</td>
+                <td>@shipmentItem.ReceiverEmail</td>
+                <td>@shipmentItem.ShipmentStatus</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<div>
+    <button class="btn btn-primary"><a href="/Shipment/ShipmentList" style="text-decoration:none;color:whitesmoke">Back to Shipment List</a></button>
+</div>

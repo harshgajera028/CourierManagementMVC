@@ -1,0 +1,37 @@
+﻿@model Courier_Management_System.Models.AddShipmentViewModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Courier Delivery Panel</h1>
+    <small style="opacity:0.6">Courier Management System </small>
+    <hr />
+</div>
+
+
+<form method="post" asp-controller="Shipment" asp-action="CustomerDetails">
+    <div class="col">
+        <label for="labelShipperName">Your Name</label>
+        <input type="text" class="form-control" asp-for="ShipperName" >
+        <label for="labelShipperAddress">Your Address</label>
+        <input type="text" class="form-control" asp-for="ShipperAddress" >
+        <label for="labelShipperEmail">Your Email Address</label>
+        <input type="text" class="form-control" asp-for="ShipperEmail" >
+        <br />
+        <hr />
+
+        <label for="labelReceiverName">Receiver Name</label>
+        <input type="text" class="form-control" asp-for="ReceiverName" >
+        <label for="labelReceiverAddress">Receiver Address</label>
+        <input type="text" class="form-control" asp-for="ReceiverAddress" >
+        <label for="labelReceiverEmail">Receiver Email</label>
+        <input type="text" class="form-control" asp-for="ReceiverEmail" >
+
+        <label for="labelShipmentStatus">Confirm to Deliver? <small style="opacity:0.6">[Type "Dispatch" to Confirm]</small></label>
+        <input type="text" class="form-control" asp-for="ShipmentStatus" placeholder="Dispatch">
+        <br />
+        <button type="submit" class="btn btn-primary">Confirm pickup</button>
+        <a asp-action="CustomerPanel" asp-controller="Home" class="btn btn-primary">Back to Customer panel</a>
+    </div>
+</form>
+

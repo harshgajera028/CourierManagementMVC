@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+       
+}
+
+<div class="text-center">
+    <h1 class="display-4">Admin Panel</h1>
+    <small style="opacity:0.6">Courier Management System</small>
+    <hr />
+
+    <div style="display:grid; gap:10px;">
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Dashboard">Dashboard</a></button>
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link text-white" asp-area="" asp-controller="Shipment" asp-action="Add">Add Shipments or Customers</a></button>
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link text-white" asp-area="" asp-controller="Shipment" asp-action="ShipmentList">Manage Shipments</a></button>
+        <button type="button" class="btn btn-primary btn-lg"><a class="nav-link text-white" asp-area="" asp-controller="Shipment" asp-action="ShipmentList">Search By Consignment ID</a>
+            <br /><small style="opacity:0.6">[Only for the acknowledged Consignment ID]</small>
+        </button>
+
+        <br />
+        <a class="btn btn-outline-danger" asp-area="" asp-controller="Admin" asp-action="AdminRegister" >Register a Admin</a>
+        <a class="btn btn-outline-danger" asp-area="" asp-controller="Admin" asp-action="AdminsList"> Admins Information</a>
+    </div>
+   
+</div>
+
+

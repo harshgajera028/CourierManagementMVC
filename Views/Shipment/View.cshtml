@@ -1,0 +1,39 @@
+﻿
+@model Courier_Management_System.Models.UpdateShipmentViewModel
+
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Shipment and Customer Information Edit Panel</h1>
+    <small style="opacity:0.6">Courier Management System </small>
+    <hr />
+</div>
+
+<form method="post" asp-controller="Shipment" asp-action="View">
+    <div class="col">
+        <label for="">Consignment ID</label>
+        <input type="text" class="form-control" asp-for="Id"  readonly>
+        <label for="">Shipper Name</label>
+        <input type="text" class="form-control" asp-for="ShipperName" >
+        <label for="">Shipper Address</label>
+        <input type="text" class="form-control" asp-for="ShipperAddress" >
+        <label for="">Shipper Email</label>
+        <input type="text" class="form-control" asp-for="ShipperEmail" >
+        <br />
+        <hr />
+
+        <label for="">Receiver Name</label>
+        <input type="text" class="form-control" asp-for="ReceiverName" >
+        <label for="">Receiver Address</label>
+        <input type="text" class="form-control" asp-for="ReceiverAddress" >
+        <label for="">Receiver Email</label>
+        <input type="text" class="form-control" asp-for="ReceiverEmail" >
+
+        <label for="">Shipment Status</label>
+        <input type="text" class="form-control" asp-for="ShipmentStatus" >
+        <br />
+        <button type="submit" class="btn btn-success">Update</button>
+        <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Shipment">Delete</button>
+    </div>
+</form>
