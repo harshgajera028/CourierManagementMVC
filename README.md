@@ -12,6 +12,12 @@ The primary purpose of this project is to offer a user-friendly courier manageme
 - **Send Courier:** Allow users to send courier packages without requiring them to log in.
 - **Responsive Design:** A user-friendly, responsive interface accessible from various devices.
 
+## Demo
+
+Watch a demo of the Courier Management .NET Core MVC Project:
+
+[[Watch the demo]](https://drive.google.com/file/d/1GkaRFNRNVvuUl0ZQFpVbtPTlcGobfHVY/view?usp=drive_link)
+
 ## Getting Started
 
 To run the Courier Management .NET Core MVC project, follow these steps:
